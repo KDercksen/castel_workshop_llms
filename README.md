@@ -32,3 +32,4 @@ pip install -r requirements.txt
 - [OpenAI](https://openai.com/)
 - [Together](https://together.ai/)
 - [Huggingface](https://huggingface.co/)
+- [LangChain](https://python.langchain.com/docs/get_started/introduction) (chaining LLMs and other applications together for more complicated tasks)
