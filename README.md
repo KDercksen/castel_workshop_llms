@@ -17,3 +17,18 @@ Install the required Python dependencies (inside a virtual environment):
 ```bash
 pip install -r requirements.txt
 ```
+
+### Scripts included
+
+| Script                | Description                                                                                              |
+| --------------------- | -------------------------------------------------------------------------------------------------------- |
+| make_data.py          | Create a dataset of short stories using ChatGPT. The data from this script is used in `estimate_cost.py` |
+| estimate_cost.py      | Estimate the cost of generating a set of short stories using ChatGPT. Run `make_data.py` first.          |
+| how_to_prompt.py      | Examples of querying OpenAI and Together.AI LLMs through API.                                            |
+| modalities_plot.ipynb | Simulation of cost and duration of serverless vs dedicated machine.                                      |
+
+### Resources
+
+- [OpenAI](https://openai.com/)
+- [Together](https://together.ai/)
+- [Huggingface](https://huggingface.co/)

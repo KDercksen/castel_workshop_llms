@@ -21,4 +21,4 @@ for sample in data:
     generated_cost = len(generated_tokens) / 1000 * generated_price
     total_price += prompt_cost + generated_cost
 
-print(f"Total cost for this data file: ${total_price:.2f}")
+print(f"Total cost for this data file: ${total_price:.3f}")
