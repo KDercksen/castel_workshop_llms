@@ -14,11 +14,14 @@ prompt_price = 0.001  # per 1000 tokens
 generated_price = 0.002  # per 1000 tokens
 
 total_price = 0
+total_tokens = 0
 for sample in data:
     prompt_tokens = encoder.encode(sample["prompt"])
     generated_tokens = encoder.encode(sample["completion"])
+    total_tokens += len(prompt_tokens) + len(generated_tokens)
     prompt_cost = len(prompt_tokens) / 1000 * prompt_price
     generated_cost = len(generated_tokens) / 1000 * generated_price
     total_price += prompt_cost + generated_cost
 
 print(f"Total cost for this data file: ${total_price:.3f}")
+print(f"Total tokens for this data file: {total_tokens}")
